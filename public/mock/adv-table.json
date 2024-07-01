@@ -1,0 +1,20 @@
+{
+    "children":[
+        {
+            "id": "jKJncyCVS77drVKEzPBpmT",
+            "label": "序号",
+            "prop": "index1",
+            "type": "index",
+            "width": "60px",
+            "showOverflowTooltip": true,
+            "editProps": {
+                "enable": false
+            },
+            "searchProps": {
+                "enable": true,
+                "componentType": "text",
+                "supportConditionList": ["ne","like","eq","isNull","notlike","isNotNull"]
+            }
+        }
+    ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "4362603",
+  "name": "蜂舟平台-文件图标库",
+  "font_family": "bt-icon-f",
+  "css_prefix_text": "bt-icon-f-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5634730",
+      "name": "jenkins",
+      "font_class": "jenkins",
+      "unicode": "f1d9",
+      "unicode_decimal": 61913
+    },
+    {
+      "icon_id": "15378810",
+      "name": "sonar",
+      "font_class": "sonar",
+      "unicode": "ecab",
+      "unicode_decimal": 60587
+    },
+    {
+      "icon_id": "25859541",
+      "name": "k8s",
+      "font_class": "k8s",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "129221",
+      "name": "svg",
+      "font_class": "svg",
+      "unicode": "e891",
+      "unicode_decimal": 59537
+    },
+    {
+      "icon_id": "2701692",
+      "name": "bug",
+      "font_class": "bug",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "6337457",
+      "name": "image",
+      "font_class": "image",
+      "unicode": "ec7f",
+      "unicode_decimal": 60543
+    },
+    {
+      "icon_id": "25319498",
+      "name": "shell",
+      "font_class": "shell",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "5916400",
+      "name": "css",
+      "font_class": "css",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5916417",
+      "name": "md",
+      "font_class": "md",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "12600894",
+      "name": "scss",
+      "font_class": "scss",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "13743954",
+      "name": "less",
+      "font_class": "less",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
+      "icon_id": "25859534",
+      "name": "docker",
+      "font_class": "docker",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "5916437",
+      "name": "xml",
+      "font_class": "xml",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "27365140",
+      "name": "java",
+      "font_class": "java",
+      "unicode": "ec0a",
+      "unicode_decimal": 60426
+    },
+    {
+      "icon_id": "31260979",
+      "name": "yml",
+      "font_class": "yml",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "38462512",
+      "name": "yaml",
+      "font_class": "yaml",
+      "unicode": "ec0b",
+      "unicode_decimal": 60427
+    },
+    {
+      "icon_id": "29931",
+      "name": "ico",
+      "font_class": "ico",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "1444787",
+      "name": "json",
+      "font_class": "json",
+      "unicode": "e7bd",
+      "unicode_decimal": 59325
+    },
+    {
+      "icon_id": "1766511",
+      "name": "html",
+      "font_class": "html",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "6496026",
+      "name": "vue",
+      "font_class": "vue",
+      "unicode": "e799",
+      "unicode_decimal": 59289
+    },
+    {
+      "icon_id": "12600760",
+      "name": "js",
+      "font_class": "js",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "13303504",
+      "name": "gitlab",
+      "font_class": "gitlab",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "13304048",
+      "name": "stylelint",
+      "font_class": "stylelint",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "13304114",
+      "name": "ts",
+      "font_class": "ts",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "15378331",
+      "name": "eslint",
+      "font_class": "eslint",
+      "unicode": "eb8a",
+      "unicode_decimal": 60298
+    },
+    {
+      "icon_id": "23630161",
+      "name": "file",
+      "font_class": "file",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    }
+  ]
+}

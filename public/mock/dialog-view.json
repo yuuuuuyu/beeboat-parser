@@ -1,0 +1,14 @@
+{
+  "components": [
+    {
+      "id": 2,
+      "type": "BTDialog",
+      "props": {
+        "ref":"dialogViewRef"
+      },
+      "styles": {},
+      "actions": {},
+      "events": {}
+    }
+  ]
+}

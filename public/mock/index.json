@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "id": "7e8415712159ff6bfeeb29ca95daf787",
+      "code": "BtpMicroAppHeader",
+      "type": "BtpMicroAppHeader",
+      "actions":{},
+      "styles":{
+        "background-color": "#1E90FF",
+        "height":"52px"
+      }
+    },
+    {
+      "id": "9b6e3bd09a52ca997cf5856a5fb7e5f5333",
+      "code": "BtpDiv",
+      "type": "BtpDiv",
+      "styles":{"display":"flex","height":"calc(100% - 52px)"},
+      "actions":{},
+      "children":[
+        {
+          "id": "9b6e3bd09a52ca997cf5856a5fb7e5f5",
+          "code": "BtpMicroAppMenu",
+          "type": "BtpMicroAppMenu",
+          "actions":{}
+        },
+        {
+          "id": "58e5b23bd1da464f332cc12935304b2123",
+          "code": "BtpMicroAppRouterView",
+          "type": "BtpMicroAppRouterView",
+          "actions":{},
+          "styles":{"flex":"1"}
+        }
+      ]
+    }
+  ]
+}

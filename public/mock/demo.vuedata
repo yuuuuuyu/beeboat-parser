@@ -1,0 +1,16 @@
+<template>
+<div class="abc">123--{{state.text}}
+</div>
+</template>
+<script setup lang="ts">
+import {reactive} from 'vue'
+
+const state = reactive({
+    text:'1234563333333'
+})
+</script>
+<style scoped>
+.abc {
+    color:red
+}
+</style>

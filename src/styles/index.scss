@@ -1,0 +1,268 @@
+@use './fonts/iconfont';
+@use 'animate.css';
+@use 'element-plus/dist/index.css';
+
+:root {
+    --bt-drawer-dialog-right: 0px !important;
+}
+
+.el-overlay:has(.is-fullscreen.bt-drawer-dialog) {
+    top: 59px !important;
+    left: 259px !important;
+    height: calc(100% - 83px) !important;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.btd-index {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    .btd-content {
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        .btd-solution-content {
+            position: relative;
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            min-height: 0;
+            background-color: #f5f7fa;
+
+            .btd-sub-menu {
+                width: 200px;
+                min-width: 200px;
+                height: 100%;
+                background-color: #f9f9f9;
+                box-shadow: inset -1px 0 0 0 #e5ecf0;
+            }
+
+            .btd-view {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .el-menu {
+        background: transparent;
+        border-right: none !important;
+    }
+
+    .btd-logger {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        float: right;
+
+        .btd-logger-close {
+            float: right;
+        }
+
+        .btd-logger--drawer {
+            .el-drawer__header {
+                padding: 5px;
+                margin-bottom: 0;
+                border-bottom: 1px solid #f5f7fa;
+                box-shadow: 0 0.125rem 0.25rem 0 rgb(151 178 190 / 6%);
+            }
+
+            .el-drawer__body {
+                padding: 5px;
+            }
+        }
+
+        .btd-logger--header {
+            display: flex;
+            padding: 5px;
+            background-color: #909399;
+
+            .btd-logger--header__title {
+                flex: 1;
+                color: white;
+            }
+        }
+
+        .btd-logger--content {
+            height: calc(100% - 40px);
+            padding: 16px;
+            overflow: auto;
+        }
+    }
+}
+
+.btd-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 100%;
+    color: #757e87;
+    background-color: #f9f9f9;
+    box-shadow: inset -1px 0 0 0 #e5ecf0;
+
+    .el-menu {
+        width: 100%;
+
+        .el-menu-item {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .btd-menu--logo {
+        box-sizing: border-box;
+        width: 70px;
+        height: 60px;
+        padding: 12px 18px;
+
+        img {
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+        }
+    }
+
+    .btd-menu--content {
+        display: block;
+        flex: 1;
+        overflow: hidden;
+
+        .btd-menu-item {
+            cursor: pointer;
+        }
+
+        .btd-menu-item:hover {
+            color: #2c7ef8;
+        }
+
+        .btd-menu-item.active {
+            color: white;
+            background-color: #2c7ef8;
+        }
+    }
+}
+
+.btd-submenu {
+    width: 200px;
+    min-width: 200px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fafbfb;
+    border-right: 1px solid #e5ecf0;
+
+    .el-menu {
+        .el-menu-item {
+            box-sizing: border-box;
+            height: 40px;
+            border-left: 2px solid transparent;
+        }
+
+        .el-menu-item.is-active {
+            box-sizing: border-box;
+            color: var(--el-menu-active-color);
+            background-color: var(--el-menu-hover-bg-color);
+            border-left: 2px solid var(--el-menu-active-color);
+        }
+
+        .el-sub-menu {
+            .el-sub-menu__title {
+                height: 40px;
+            }
+        }
+    }
+}
+
+.btd-header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+    border-bottom: 0.0625rem solid rgb(233 233 233);
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(151 178 190 / 6%);
+
+    .btd-header__title {
+        display: flex;
+        flex: 1;
+        color: var(--el-menu-text-color);
+
+        .btd-header__title__icon {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .el-breadcrumb {
+            .el-breadcrumb__item {
+                height: 100%;
+            }
+        }
+    }
+
+    .btd-header--users {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+.btd-login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background: url('@/assets/login/login-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .btd-login__form {
+        box-sizing: border-box;
+        background: #ffffff;
+
+    }
+}
+
+
+
+// -----------------------------element-plus ui-------------------------------
+.el-color-predefine__color-selector {
+    border: 1px solid #666;
+}
+
+.el-tree-node__content {
+    .el-tree-node__expand-icon {
+        svg {
+            color: var(--el-text-color-regular);
+        }
+    }
+
+    .el-select-dropdown__item.is-disabled {
+        color: var(--el-text-color-regular);
+    }
+}
+
+// -----------------------------beeboat design ui-----------------------------
+
+/*
+ * 页面样式
+ */
+.bt-page {
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    padding: 8px;
+}

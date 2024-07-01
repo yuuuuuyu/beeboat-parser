@@ -1,0 +1,67 @@
+[
+    {
+        "name": "首页",
+        "path": "/",
+        "params":{
+            "uid":"123"
+        },
+        "meta": {
+            "id": "2114428e286a1af1b31381326da91129",
+            "viewId":"IndexView",
+            "viewModelId":"index",
+            "name": "首页",
+            "dynamicLoad": false
+        },
+        "children": [
+            {
+                "name": "3ec6cc6a4aead2098b7da820ea98dbb4",
+                "path": "/login",
+                "meta": {
+                    "id": "3ec6cc6a4aead2098b7da820ea98dbb4",
+                    "viewId":"LoginView",
+                    "viewModelId":"login",
+                    "name": "标准前端登录",
+                    "parentId": "88e7a1721cb1055f15fe13f533fcda8a",
+                    "dynamicLoad": false
+                },
+                "children": []
+            },
+            {
+                "name": "1",
+                "path": "/decoder",
+                "meta": {
+                    "id": "1",
+                    "viewId":"DemoView",
+                    "viewModelId":"decoder",
+                    "name": "测试页面",
+                    "parentId": "88e7a1721cb1055f15fe13f533fcda8a",
+                    "dynamicLoad": false
+                }
+            },
+            {
+                "name": "12",
+                "path": "/decoder2",
+                "meta": {
+                    "id": "12",
+                    "viewId":"DemoView2",
+                    "viewModelId":"decoder2",
+                    "name": "测试页面2",
+                    "parentId": "88e7a1721cb1055f15fe13f533fcda8a2",
+                    "dynamicLoad": false
+                }
+            },
+            {
+                "name": "13",
+                "path": "/decoder13",
+                "meta": {
+                    "id": "13",
+                    "viewId":"OvdView",
+                    "viewModelId":"OvdView",
+                    "name": "完全重写的页面",
+                    "parentId": "88e7a1721cb1055f15fe13f533fcda8a2",
+                    "dynamicLoad": false
+                }
+            }
+        ]
+    }
+]
