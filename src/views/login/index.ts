@@ -4,15 +4,6 @@ import { ElMessageBox } from 'element-plus'
 import { BTPViewContext, BTPApplication } from 'beeboat-plus'
 
 export default class LoginViewContext extends BTPViewContext {
-    static createInstance(
-        vueInstance?: any,
-        viewId?: string,
-        viewModelId?: string,
-        parentViewContext?: any,
-    ): any {
-        return new LoginViewContext(vueInstance, viewId, viewModelId, parentViewContext)
-    }
-
     executeAction(eventName: any, item: any): void {
         if (item.code == 'Login' && eventName == 'click') {
             const formRef = this.getRef('formRef')

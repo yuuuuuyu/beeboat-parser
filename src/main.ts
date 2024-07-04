@@ -1,23 +1,24 @@
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import BeeboatPlus, { BTPApplication } from 'beeboat-plus'
+import DynamicView from './beeboat-plus/view/bt-view.vue'
 
 import '@/styles/index.scss'
 
-import LoginViewContext from '@/views/login-page/index'
-import DynamicView from './beeboat-plus/view/bt-view.vue'
+import list from './views/register'
 
-import BeeboatPlus, { BTPApplication } from 'beeboat-plus'
-
-// import LoginPage from '@/views/login-page/index.vue'
 class UserApplication extends BTPApplication {
     constructor(options) {
         super(options)
         this.appManager.layoutView = DynamicView
-
-        // 公共   TODO setup.ts
-        this.appManager.registerViewContext('LoginPage', LoginViewContext)
-        // this.appManager.registerPage('LoginPage', LoginPage)
+        for (const [key, value] of Object.entries(list)) {
+            if (typeof value === 'function') {
+                this.appManager.registerViewContext(key, value)
+            } else {
+                this.appManager.registerPage(key, value)
+            }
+        }
     }
 }
 

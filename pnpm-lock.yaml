@@ -56,7 +56,7 @@ specifiers:
   animate.css: ^4.1.1
   autoprefixer: ^10.4.16
   axios: ^0.26.1
-  beeboat-plus: 0.0.35
+  beeboat-plus: 0.0.44
   codemirror: ^6.0.1
   codemirror-editor-vue3: ^2.3.0
   cross-env: 7.0.3
@@ -155,7 +155,7 @@ dependencies:
   '@vueuse/shared': 8.9.4_vue@3.4.29
   animate.css: 4.1.1
   axios: 0.26.1
-  beeboat-plus: 0.0.35
+  beeboat-plus: 0.0.44
   codemirror-editor-vue3: 2.7.0_0e9b5c27d7115de3d48a308193d8b21b
   css-color-function: 1.3.3
   dayjs: 1.11.10
@@ -4188,8 +4188,8 @@ packages:
     resolution: {integrity: sha512-xoLQD8gmmR32MeuBHgH0Tzd5PuSZx71ZsbhVxOCRbgktZEPe4SQy7s9Z50uPp0F/f7iw2XmkHN2xkgbMfckMDA==}
     dev: false
 
-  /beeboat-plus/0.0.35:
-    resolution: {integrity: sha512-SN/XQw/mgDGGaGCq7tTQ83UquJsylOsBDddGLWp+uuTkbPYeURbnOf40TnhggKs1n0OwjaZgnIXN8K6d6Lcl7w==}
+  /beeboat-plus/0.0.44:
+    resolution: {integrity: sha512-2mVF8WBb/yQZLQyZPyAHHPqVWhyCByg1fYLuL7TlQyDgM+O/xp3tk2VjmhSBcJyOhHmWUOtFAiJDinwmib+oMw==}
     dependencies:
       jsencrypt: 3.3.2
       vue-cookies: 1.8.4
