@@ -13,7 +13,6 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import svgLoader from 'vite-svg-loader'
 import { visualizer } from 'rollup-plugin-visualizer'
-import BeeboatUIPlugin from 'vite-plugin-beeboat-ui'
 
 /**
  * 递归解析文件夹
@@ -283,7 +282,6 @@ export function getPluginsList(command, env, mode) {
     const lifecycle = process.env.npm_lifecycle_event
     return [
         vue(),
-        BeeboatUIPlugin({}),
         createViteHtmlPlugin(env, mode),
         createViteSvgIconsPlugin(),
         vueJsx(),

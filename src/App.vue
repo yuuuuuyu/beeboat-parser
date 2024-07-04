@@ -5,6 +5,6 @@
 </template>
 
 <script lang="ts" setup>
-import beeTheme from 'beeboat-ui/es/bee-theme'
+import beeTheme from 'beeboat-plus/es/beeboat-theme'
 beeTheme.start()
 </script>

@@ -2,30 +2,22 @@ import App from './App.vue'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
-import 'element-plus/dist/index.css'
-import 'beeboat-ui/theme/css/index.css'
-import 'beeboat-plus/theme/css/index.css'
-
 import '@/styles/index.scss'
 
-import IndexPage from './views/index-page/index.vue'
-import WorkbenchPage from './views/workbench-page/index.vue'
-
-import LoginViewContext from '@/extends/login-view-context'
-import OvdView from '@/extends/ovd-view.vue'
+import LoginViewContext from '@/views/login-page/index'
 import DynamicView from './beeboat-plus/view/bt-view.vue'
 
 import BeeboatPlus, { BTPApplication } from 'beeboat-plus'
 
+// import LoginPage from '@/views/login-page/index.vue'
 class UserApplication extends BTPApplication {
     constructor(options) {
         super(options)
         this.appManager.layoutView = DynamicView
+
+        // 公共   TODO setup.ts
         this.appManager.registerViewContext('LoginPage', LoginViewContext)
-        this.appManager.registerPage('OvdView', OvdView)
-        this.appManager.registerPage('IndexPage', IndexPage)
-        this.appManager.registerPage('WorkbenchPage', WorkbenchPage)
-        //
+        // this.appManager.registerPage('LoginPage', LoginPage)
     }
 }
 

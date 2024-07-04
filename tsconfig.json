@@ -17,17 +17,39 @@
         "baseUrl": ".",
         "allowJs": false,
         "resolveJsonModule": true,
-        "lib": ["dom", "esnext"],
+        "lib": [
+            "dom",
+            "esnext"
+        ],
         "incremental": true,
         "paths": {
-            "@": ["src"],
-            "@/*": ["src/*"],
-            "@build/*": ["build/*"],
-            "/#/*": ["types/*"],
-            "@ui": ["beeboat-ui"]
+            "@": [
+                "src"
+            ],
+            "@/*": [
+                "src/*"
+            ],
+            "@build/*": [
+                "build/*"
+            ],
+            "/#/*": [
+                "types/*"
+            ],
+            "@ui": [
+                "beeboat-plus"
+            ]
         },
-        "types": ["node", "vite/client", "element-plus/global", "vite-plugin-svg-icons/client"],
-        "typeRoots": ["./node_modules/@types/", "./types", "src/**"]
+        "types": [
+            "node",
+            "vite/client",
+            "element-plus/global",
+            "vite-plugin-svg-icons/client"
+        ],
+        "typeRoots": [
+            "./node_modules/@types/",
+            "./types",
+            "src/**"
+        ]
     },
     "include": [
         "src/**/*.ts",
@@ -35,10 +57,14 @@
         "src/**/*.vue",
         "types/*.d.ts",
         "mock/*.ts",
-        "beeboat-ui/**/*.ts",
-        "beeboat-ui/**/*.tsx",
-        "beeboat-ui/**/*.vue",
+        "beeboat-plus/**/*.ts",
+        "beeboat-plus/**/*.tsx",
+        "beeboat-plus/**/*.vue",
         "vite.config.ts"
     ],
-    "exclude": ["node_modules", "dist", "**/*.js"]
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.js"
+    ]
 }

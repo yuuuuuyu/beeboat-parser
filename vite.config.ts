@@ -4,8 +4,6 @@ import pkg from './package.json'
 import { getPluginsList } from './build/plugin'
 import { UserConfigExport, ConfigEnv, loadEnv } from 'vite'
 
-import { readFileSync } from 'fs'
-
 // 当前执行node命令时文件夹的地址（工作目录）
 const root: string = process.cwd()
 
@@ -30,6 +28,7 @@ const __APP_INFO__ = {
 export default ({ command, mode }: ConfigEnv): UserConfigExport => {
     // 处理运行时环境变量
     const env = loadEnv(mode, root)
+
     return {
         base: `${env.VITE_PUBLIC_PATH}${env.VITE_APP_MOUNT_NAME}`,
         root,
@@ -39,9 +38,9 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: [`@use "beeboat-ui/es/bee-theme/src/scss/var.scss" as *;`].join(
-                        '\n',
-                    ),
+                    additionalData: [
+                        `@use "beeboat-plus/es/beeboat-theme/src/themes/scss/var.scss" as *;`,
+                    ].join('\n'),
                 },
             },
             postcss: {
