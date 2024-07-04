@@ -26,9 +26,7 @@ const __APP_INFO__ = {
 }
 
 export default ({ command, mode }: ConfigEnv): UserConfigExport => {
-    // 处理运行时环境变量
     const env = loadEnv(mode, root)
-
     return {
         base: `${env.VITE_PUBLIC_PATH}${env.VITE_APP_MOUNT_NAME}`,
         root,

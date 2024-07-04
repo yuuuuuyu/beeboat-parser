@@ -37,6 +37,9 @@
             ],
             "@ui": [
                 "beeboat-plus"
+            ],
+            "element-plus/global": [
+                "node_modules/element-plus/global.d.ts"
             ]
         },
         "types": [
