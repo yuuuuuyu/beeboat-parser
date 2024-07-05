@@ -37,6 +37,7 @@
 - src/views：**无法通过设计器生成的页面，可以在此处新建目录，并在 register.ts 中注册**,可以只重写逻辑，也可以重写逻辑和页面
 - src/views/_template：模板，可以直接复制进行开发
 - src/styles：公共样式文件，如需自定义样式可以在此修改
-- public/config：配置文件目录
+- public/config：配置文件，需要和.env文件对应
 - public/favicon.ico：网站图标
 - package.json：项目配置文件
+- Dockerfile：docker配置文件，**需要根据模块名修改**
