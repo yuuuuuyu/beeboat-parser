@@ -7,18 +7,14 @@ import DynamicView from './beeboat-plus/view/bt-view.vue'
 import '@/styles/index.scss'
 
 import list from './views/register'
-
 class UserApplication extends BTPApplication {
     constructor(options) {
         super(options)
         this.appManager.layoutView = DynamicView
-        for (const [key, value] of Object.entries(list)) {
-            if (typeof value === 'function') {
-                this.appManager.registerViewContext(key, value)
-            } else {
-                this.appManager.registerPage(key, value)
-            }
-        }
+        list.forEach(item => {
+            item.page && this.appManager.registerPage(item.name, item.page)
+            item.context && this.appManager.registerViewContext(item.name, item.context)
+        })
     }
 }
 
