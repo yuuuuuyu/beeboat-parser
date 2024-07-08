@@ -4,8 +4,8 @@ import { ElMessageBox } from 'element-plus'
 import { BTPViewContext, BTPApplication } from 'beeboat-plus'
 
 export default class LoginViewContext extends BTPViewContext {
-    executeAction(eventName: any, item: any): void {
-        if (item.code == 'Login' && eventName == 'click') {
+    executeAction(executor: any): void {
+        if (executor.component.code == 'Login' && executor.eventName == 'click') {
             const formRef = this.getRef('formRef')
 
             formRef.validate(valid => {
