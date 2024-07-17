@@ -1,9 +1,9 @@
 import { BTPViewContext, BTPApplication } from 'beeboat-plus'
 
 export default class LoginViewContext extends BTPViewContext {
-    executeAction(eventName: any, item: any): void {
+    executeAction(executor: any): void {
         // TODO
         const instance = BTPApplication.getInstance()
-        console.log(instance, eventName, item)
+        console.log(instance, executor)
     }
 }

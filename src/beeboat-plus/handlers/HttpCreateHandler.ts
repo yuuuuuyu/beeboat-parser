@@ -16,6 +16,8 @@ export default class HttpCreateHandler extends BTPHttpCreateHandler {
                         return data
                     }
                     // TODO 登录超时
+                    // '用户未登录' = 130001,'操作未授权' = 130002,'数据未授权' = 130003,'用户登录过期' = 13004,'token' = 13005,
+
                     if (code != '130004') {
                         return Promise.reject({
                             ...response,
