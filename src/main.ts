@@ -1,11 +1,10 @@
 import App from './App.vue'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
-import BeeboatPlus, { BTPApplication } from 'beeboat-plus'
-import DynamicView from './beeboat-plus/view/bt-view.vue'
+import BeeboatPlus, { BTPApplication, BtpParseView } from 'beeboat-plus'
 
 // 自定义handlers
-import HttpCreateHandler from '@/beeboat-plus/handlers/HttpCreateHandler'
+import HttpCreateHandler from '@/handlers/HttpCreateHandler'
 
 import '@/styles/index.scss'
 
@@ -13,7 +12,7 @@ import list from './views/register'
 class UserApplication extends BTPApplication {
     constructor(options) {
         super(options)
-        this.appManager.layoutView = DynamicView
+        this.appManager.layoutView = BtpParseView
         list.forEach(item => {
             item.page && this.appManager.registerPage(item.name, item.page)
             item.context && this.appManager.registerViewContext(item.name, item.context)

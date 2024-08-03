@@ -37,7 +37,7 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
             preprocessorOptions: {
                 scss: {
                     additionalData: [
-                        `@use "beeboat-plus/es/beeboat-theme/src/themes/scss/var.scss" as *;`,
+                        // `@use "beeboat-plus/es/beeboat-theme/src/themes/scss/var.scss" as *;`,
                     ].join('\n'),
                 },
             },
