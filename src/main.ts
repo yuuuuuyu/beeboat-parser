@@ -5,6 +5,7 @@ import BeeboatPlus, { BTPApplication, BtpParseView } from 'beeboat-plus'
 
 // 自定义handlers
 import HttpCreateHandler from '@/handlers/HttpCreateHandler'
+import AppMessageManager from '@/handlers/AppMessageManager'
 
 import '@/styles/index.scss'
 
@@ -13,6 +14,11 @@ class UserApplication extends BTPApplication {
     constructor(options) {
         super(options)
         this.appManager.layoutView = BtpParseView
+
+        // 注册重写对象
+        this.messageBoxManager = new AppMessageManager()
+
+        // 注册页面/逻辑
         list.forEach(item => {
             item.page && this.appManager.registerPage(item.name, item.page)
             item.context && this.appManager.registerViewContext(item.name, item.context)
