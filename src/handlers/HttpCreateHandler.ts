@@ -52,8 +52,6 @@ export default class HttpCreateHandler extends BTPHttpCreateHandler {
                         data.msg ?? data.stackMsg ?? (response.statusText || '网络异常'),
                     )
                 } catch (error) {
-                    console.log(error.message, '====')
-
                     return this.reject(error, '请求出错')
                 }
             },
