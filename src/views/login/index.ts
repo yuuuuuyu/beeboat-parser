@@ -1,7 +1,7 @@
 import JSEncrypt from 'jsencrypt'
 import { ElMessageBox } from 'element-plus'
 
-import { BTPViewContext, BTPApplication } from 'beeboat-plus'
+import { BTPViewContext, BTPApplication, BTPUtils } from 'beeboat-plus'
 
 export default class LoginViewContext extends BTPViewContext {
     executeAction(executor): void {
@@ -36,6 +36,9 @@ export default class LoginViewContext extends BTPViewContext {
                         BTPApplication.getInstance().setToken(result.id)
                     }
                     BTPApplication.getInstance().$router.push('/')
+
+                    BTPUtils.message({ type: 'success', message: '登录成功' })
+                    // BTPUtils.message.warning('登录成功')
                 })
                 .catch(err => {
                     ElMessageBox.alert(err.msg, '错误', { type: 'error' })
