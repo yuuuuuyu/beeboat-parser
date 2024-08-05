@@ -78,8 +78,8 @@ importers:
         specifier: ^0.26.1
         version: 0.26.1
       beeboat-plus:
-        specifier: ^0.1.7
-        version: 0.1.7(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
+        specifier: ^0.1.19
+        version: 0.1.19(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
       codemirror-editor-vue3:
         specifier: ^2.3.0
         version: 2.7.0(@babel/parser@7.25.3)(@nuxt/kit@3.12.4(magicast@0.3.4)(rollup@2.79.1))(codemirror@6.0.1(@lezer/common@1.2.1))(diff-match-patch@1.0.5)(rollup@2.79.1)(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
@@ -1127,8 +1127,8 @@ packages:
   '@beeboat/components@1.0.15':
     resolution: {integrity: sha512-g1TLDRrTViIA/GS3q4TJJewPJ4Is1akqchxodp3LwDH/Y4wb6/xDfEXU1YsuOE5dZ6gv5EUTVP4Yh2+0RHgerg==}
 
-  '@beeboat/core@1.0.8':
-    resolution: {integrity: sha512-atuQCLyFAiQyYyZjEgU0kvYbi9hWR780ukJ0W1m+pFv2E1LC9qBZ+wjDQ6ywOKlAZHiEPAm0PzJWfmSRbdoOjQ==}
+  '@beeboat/core@1.0.14':
+    resolution: {integrity: sha512-sMpz2rV41cEVj+wi9UFhGUNyfgvyPhN5llBheUkVyGvBay6gi9kJrtWrhWafAKJyGQSN6vxH9EOSX7N8uB1yog==}
     peerDependencies:
       element-plus: ^2.7.7
 
@@ -2259,8 +2259,8 @@ packages:
   batch-processor@1.0.0:
     resolution: {integrity: sha512-xoLQD8gmmR32MeuBHgH0Tzd5PuSZx71ZsbhVxOCRbgktZEPe4SQy7s9Z50uPp0F/f7iw2XmkHN2xkgbMfckMDA==}
 
-  beeboat-plus@0.1.7:
-    resolution: {integrity: sha512-oz6xK3pU8q8qCIxUCVcYJ4k1B2VBFEoK+sENM1OwRSeUsGHqgsZRFCpIXBKx/zcLZOYIxzBjLjpNkg+jV6CLAQ==}
+  beeboat-plus@0.1.19:
+    resolution: {integrity: sha512-GcSzbBbTjP2KYru2Xfg+atb7WpAHdpQuBvaQstR91FRlyfbglfCsyi7dpbFrfjsjcGhIVyXd8MO3yeMrA78OPw==}
     peerDependencies:
       element-plus: ^2.7.7
       vue: ^3.3.4
@@ -7058,7 +7058,7 @@ snapshots:
 
   '@beeboat/components@1.0.15(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))':
     dependencies:
-      '@beeboat/core': 1.0.8(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
+      '@beeboat/core': 1.0.14(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
       async-validator: 4.2.5
       resize-observer: 1.0.4
     transitivePeerDependencies:
@@ -7068,7 +7068,7 @@ snapshots:
       - typescript
       - vue
 
-  '@beeboat/core@1.0.8(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))':
+  '@beeboat/core@1.0.14(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))':
     dependencies:
       axios: 0.26.1
       element-plus: 2.7.8(vue@3.4.35(typescript@4.9.5))
@@ -8607,11 +8607,11 @@ snapshots:
 
   batch-processor@1.0.0: {}
 
-  beeboat-plus@0.1.7(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5)):
+  beeboat-plus@0.1.19(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5)):
     dependencies:
       '@beeboat/beeboat-theme': 1.0.9
       '@beeboat/components': 1.0.15(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
-      '@beeboat/core': 1.0.8(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
+      '@beeboat/core': 1.0.14(element-plus@2.7.8(vue@3.4.35(typescript@4.9.5)))(typescript@4.9.5)(vue@3.4.35(typescript@4.9.5))
       '@beeboat/directives': 1.0.2
       '@ctrl/tinycolor': 3.6.1
       axios: 0.26.1
