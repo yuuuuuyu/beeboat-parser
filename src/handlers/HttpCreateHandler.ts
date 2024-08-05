@@ -25,6 +25,10 @@ export default class HttpCreateHandler extends BTPHttpCreateHandler {
                     // 拦截非0响应
                     // 登录过期
                     if (this.isAuthExpired(data)) {
+                        BTPUtils.message({
+                            message: data.msg || data.stackMsg,
+                            type: 'warning',
+                        })
                         this.getApp().logout()
                         return this.reject(
                             response,
@@ -48,6 +52,8 @@ export default class HttpCreateHandler extends BTPHttpCreateHandler {
                         data.msg ?? data.stackMsg ?? (response.statusText || '网络异常'),
                     )
                 } catch (error) {
+                    console.log(error.message, '====')
+
                     return this.reject(error, '请求出错')
                 }
             },
